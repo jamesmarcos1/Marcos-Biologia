@@ -1,0 +1,166 @@
+:root {
+    --branco-principal : #FFFFFF;
+    --cinza-secundario : #c0c0c0;
+    --botao-azul : #167bf7;
+    --cor-de-fundo : #00030c;
+    --cor-vermelha : #ff1010; 
+    --cor-amarela : #ffd416;
+    --fonte-principal: 'Inter';
+    --cor-laranja: #ff7300;
+    --cor-azul-marinho: #23238E;
+    --cor-aquamarine: #70DB93;
+}
+
+body {
+    background-color: var(--cor-de-fundo) ;
+    color: #FFFFFF;
+    font-family: 'Anton', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Aqui começa o css do meu menu do site*/
+#menu-h{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+/* Aqui encerra o css do menu*/
+.container__imagem {
+    margin: 2em 0 2em 0;
+    width: 700;
+    height: 480;
+   
+
+    
+}
+/* Titulos*/
+.container__titulo1 {
+    color: #ff7300;
+    font-size: 38px;
+}
+
+.container__titulo2 {
+ color: #167bf7;
+ font-size: 25px;
+}
+.container__titulo3 {
+    color: #ff1010;
+    font-size: 18px;
+}
+.container__titulo4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #ffd416;
+}
+/* fim Titulos*/
+
+/* Variaçoes de texto com fontes diferente e imagem*/
+.container__texto1 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container__imagem1 {
+    margin: 2em 0 2em 0 ;
+}
+
+.container__texto2 {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* fim Variaçoes de texto com fontes diferente e imagem*/
+
+/* botão voltado a deixar em evidencia meu github */
+button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+   }
+   
+   button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+   }
+   
+   button:main, button:focus {
+    user-select: auto;
+   }
+   
+   button:hover:not(:disabled) {
+    filter: brightness(1.1);
+   }
+   
+   button:disabled {
+    cursor: auto;
+   }
+   
+   button:active:after {
+    border-width: 0 0 0px;
+   }
+   
+   button:active {
+    padding-bottom: 10px;
+   }
+
+/* fim codigo botão que foi usado varias pseudo-classes */
